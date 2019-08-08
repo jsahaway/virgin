@@ -1,0 +1,48 @@
+[class*="trig"] {
+  display: block;
+  border: none;
+  padding: 0;
+}
+
+[class*="trig-"]:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: solid 1px var(--light);
+}
+[class*="trig-"]:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: solid 1px var(--light);
+}
+
+.trig-btn {
+  padding: 15px 15px;
+  border-bottom: solid 1px white;
+  background: var(--light);
+  color: black;
+}
+.trig-btn::before {
+  content: "\271A";
+  transform: rotate(45deg);
+}
+
+.trig-btn:hover {
+  text-decoration: underline;
+}
+
+.trig-content {
+  height: auto;
+  padding: 30px 30px;
+  border: solid 1px var(--light);
+  border-bottom: none;
+  border-top: none;
+  background: white;
+  overflow: hidden;
+  transition: height 0.4s, padding-top 0.4s, padding-bottom 0.4s;
+}
+
+.trig-content-hide {
+  height: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+}

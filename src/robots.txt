@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Sitemap: https://statik-148d2.web.app/sitemap.xml
+

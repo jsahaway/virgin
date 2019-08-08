@@ -1,0 +1,54 @@
+.txt-break {
+  overflow-wrap: break-word;
+}
+
+.txt-big {
+  font-size: 3rem;
+  white-space: nowrap;
+}
+.txt-medium {
+  font-size: 1.5rem;
+}
+.txt-small {
+  font-size: 0.8rem;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.txt-center {
+  text-align: center;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.tidle::before {
+  content: "\00ab";
+  display: inline-block;
+  transform: scale(2);
+}
+
+.tidle::after {
+  content: "\00bb";
+  display: inline-block;
+
+  transform: scale(2) translate(4px, 0);
+}
+
+@media (max-width: 768px) {
+  .txt-big {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+}

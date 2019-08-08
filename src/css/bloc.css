@@ -1,0 +1,166 @@
+/* CONTAINER */
+/* CONTAINER */
+/* CONTAINER */
+.body {
+  overflow: hidden;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='408' height='49' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23fafbff' stroke-width='6' stroke-opacity='0.58'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");  -webkit-animation: Gradient2 40s ease infinite;
+  -moz-animation: Gradient2 40s ease infinite;
+  animation: Gradient2 40s ease infinite;
+}
+
+header {
+  width: 100%;
+  height: calc(100vh - 78px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(175deg, #dbe5ff, #dbe5ff, #8fadff);
+  background-size: 500% 100%;
+  -webkit-animation: Gradient 9s ease infinite;
+  -moz-animation: Gradient 9s ease infinite;
+  animation: Gradient 9s ease infinite;
+}
+
+footer {
+  background-color: #2c4a96;
+  color: white;
+}
+
+.grid-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-gap: 1rem;
+  margin-bottom: 78px;
+}
+
+.grid-item-a {
+  grid-column: 2;
+  grid-row: 1;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item-b {
+  grid-column: 3;
+  grid-row: 1;
+}
+.grid-item-c {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.grid-item-d {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.grid-item-b-a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.grid-item-d-a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .grid-item-a {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    justify-content: center;
+  }
+  .grid-item-b {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+    justify-content: start;
+  }
+  .grid-item-c {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 4;
+    justify-content: center;
+  }
+  .grid-item-d {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3;
+  }
+  .grid-item-b-a {
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .grid-item-d-a {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .grid-item-d-a {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient2 {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

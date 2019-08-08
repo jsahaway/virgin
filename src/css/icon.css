@@ -1,0 +1,157 @@
+[class*="icon"] {
+  /* color: var(--light); */
+  padding: 1em;
+  border-radius: 50%;
+  line-height: 20px;
+  height: 30px;
+  width: 30px;
+  /* background-color: var(--primary); */
+  border: solid 2px var(--primary);
+  text-align: center;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+[class*="icon"] > * {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 17px;
+  fill: white;
+}
+
+.svg-white {
+  filter: invert(100%);
+}
+
+.icon-copy {
+  padding: 1em;
+  border-radius: 50%;
+  line-height: 1.8em;
+  height: 30px;
+  width: 30px;
+  border: solid 1px var(--primary);
+  text-align: center;
+  position: relative;
+}
+
+.icon-copy::before {
+  content: "\f0c5";
+}
+
+.icon-medium {
+  font-size: 2rem;
+  height: 30px;
+  width: 30px;
+}
+
+.icon-big {
+  position: relative;
+  font-size: 3rem;
+  height: 45px;
+  width: 45px;
+}
+.icon-big > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+}
+
+.icon-photo {
+  align-self: center;
+  color: var(--light);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  background: var(--primary);
+  margin: 0;
+  overflow: hidden;
+}
+
+.btn-small {
+  position: relative;
+  text-align: center;
+  margin: 5px 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 45px;
+  border-radius: 50%;
+  color: var(--primary);
+  /* background-color: var(--light); */
+  /* border-radius: 50%; */
+  /* box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3); */
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.btn-small > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 17px;
+}
+.btn-small:hover {
+  background-color: var(--primary-1);
+}
+
+.btn-circle {
+  text-align: center;
+  position: relative;
+  margin: 5px 5px;
+  width: 40px;
+  height: 40px;
+  /* font-size: 20px;
+  line-height: 45px; */
+  color: white;
+  background-color: var(--light);
+  border-radius: 50%;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.btn-circle > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+}
+
+.btn-circle:hover {
+  transform: scale(1.1);
+  background-color: var(--primary-1);
+}
+
+.btn {
+  /* display: inline-block; */
+  /* text-align: center; */
+  background-color: var(--primary);
+  transition: all 0.3s;
+}
+.btn > * {
+  margin: 0.2rem;
+  color: var(--secondary);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-1);
+}
+
+.dot {
+  left: 50%;
+  margin: 100px 0;
+  border-radius: 50%;
+  height: 3px;
+  width: 3px;
+  background-color: black;
+  border: solid 5px black;
+  text-align: center;
+  position: relative;
+}

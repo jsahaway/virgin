@@ -1,0 +1,14 @@
+.primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-light {
+  background-color: var(--light);
+}
+/* 
+.bg-secondary {
+  background-color: var(--main-color-2);
+} */

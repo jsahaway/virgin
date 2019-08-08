@@ -1,0 +1,33 @@
+.trans-bg {
+  transition: background-color 0.5s;
+}
+
+.trans-txt-to-show {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+@keyframes text-to-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes text-to-hide {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.letterSlideUp {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s;
+}
