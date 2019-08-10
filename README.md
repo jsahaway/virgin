@@ -4,7 +4,7 @@
 
 Landing-page made whith Vanilla JS, HTML, CSS, Babel and Webpack to rule them all.
 
-## Chrome Audits (at date 08/08/2019) 
+## Chrome's Audits (at date 08/08/2019) 
 
 Getting high-score on chrome Audits 
 ![chrome audits](/audit-perf.png)
