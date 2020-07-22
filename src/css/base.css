@@ -8,6 +8,7 @@
   /* --main-color-bis: #8b9b95; */
   --primary-1: #e9f1f0;
   --primary-2: #30a595;
+  --primary-3: #292929;
   --dark: #181d1b;
   --grey-light: rgb(226, 226, 226);
   --text-size: 14px;
@@ -38,7 +39,7 @@ body {
   font-size: var(--text-size);
   /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
   /* font-family: "Philosopher", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; */
-  font-family: "Biryani", sans-serif;
+  font-family: 'Biryani', sans-serif;
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
 }
@@ -100,7 +101,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Philosopher", sans-serif;
+  font-family: 'Philosopher', sans-serif;
   /* font-family: "Playfair Display", serif; */
   font-weight: lighter;
   text-align: justify;
@@ -108,7 +109,7 @@ h5 {
   padding: 0;
 }
 p {
-  font-family: "Biryani", sans-serif;
+  font-family: 'Biryani', sans-serif;
   text-align: justify;
   margin: 0;
   padding: 0;
@@ -136,7 +137,6 @@ textarea {
   width: 100%;
   height: 300px;
 }
-
 
 @media (max-width: 576px) {
   h1 {
@@ -227,7 +227,7 @@ textarea {
 
 .collapse-trig:hover {
   /* display: block; */
-  background: "yellow";
+  background: 'yellow';
   height: 200px;
 }
 
@@ -240,7 +240,7 @@ textarea {
   width: 100vw;
   height: 100vh;
   background-color: var(--primary);
-  background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+  background-image: url('http://i.stack.imgur.com/MnyxU.gif');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -249,10 +249,10 @@ textarea {
   display: none;
 }
 
-.loaded{
+.loaded {
   display: flex;
 }
 
-#googleMaps{
+#googleMaps {
   width: 100% !important;
 }
